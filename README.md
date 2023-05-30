@@ -17,3 +17,5 @@ B/S架构，主要利用了ganymed-ssh2依赖来实现连接和命令交互
 #### 运行效果
 ![输入图片说明](image.png)
 ![输入图片说明](image01.png)
+![输入图片说明](image03.png)
+![输入图片说明](image04.png)
