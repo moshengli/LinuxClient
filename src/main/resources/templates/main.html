@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th=“http://www.thymeleaf.org”>
+<head>
+    <meta charset="UTF-8">
+    <title>会话</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script th:src="@{/js/main.js}"></script>
+</head>
+<body>
+<br>
+<br>
+<h1 style="text-align: center">请输入您要执行的命令,多条命令用&&连接!</h1>
+<br>
+<br>
+    <div id="host">
+       <span>主机:&nbsp;</span><span th:text="${host}" ></span>
+    </div>
+<br>
+<br>
+<div id="Main">
+    <span>用户名:&nbsp;</span><span th:text="${user}"></span>
+    <br>
+    <br>
+    <br>
+    <input type="text" id="input" class="form-control" aria-label="Sizing example input"
+                                                            aria-describedby="inputGroup-sizing-sm" style="margin-left:675px;margin-top:10px;width: 200px">
+</div>
+<br>
+<br>
+<br>
+<form action="/exit" method="get">
+    <button type="submit" class="btn btn-light" style="color: black">退出</button>
+</form>
+</body>
+</html>

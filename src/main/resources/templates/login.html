@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh" xmlns:th=“http://www.thymeleaf.org”>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+    <script th:src="@{/js/login.js}"></script>
+    <script th:inline="javascript">
+        var msg = [[${msg}]]
+        if (msg != null && msg != undefined && msg != "") {
+            alert(msg)
+            msg = "";
+        }
+        document.getElementsByName("host").value = "";
+        document.getElementsByName("username").value = "";
+        document.getElementsByName("password").value = "";
+    </script>
+    <title>login</title>
+</head>
+<body>
+<div class="main" style="text-align: center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>登录页面</h1>
+    <br>
+    <div style="text-align: center">
+        <form action="/login" method="post" onsubmit="return check()">
+            <span class="input-group-text">主机名&nbsp;</span>
+            <input type="text" name="host" class="form-control" aria-label="Sizing example input"
+                   aria-describedby="inputGroup-sizing-sm" style="margin-left: 675px;margin-top:10px;width: 200px">
+            <br>
+            <span class="input-group-text">用户名&nbsp;</span>
+            <input type="text" name="username" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-sm" style="margin-left: 675px;margin-top:10px;width: 200px">
+            <br>
+            <span class="input-group-text">密&nbsp;&nbsp;码&nbsp;&nbsp;</span>
+            <input type="password" name="password" class="form-control" aria-label="Sizing example input"
+                                                             aria-describedby="inputGroup-sizing-sm" style="margin-left: 675px;margin-top:10px;width: 200px">
+            <br>
+    <button type="submit" class="btn btn-dark">登录</button>
+    </form>
+</div>
+</div>
+</body>
+</html>

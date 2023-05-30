@@ -1,0 +1,13 @@
+body {
+    width:100%;
+    height:100%;
+    background-image:url("/images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+label{
+    font-family: "微软雅黑";
+}
+button{
+    margin-top: 5px;
+}

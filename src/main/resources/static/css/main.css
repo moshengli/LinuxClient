@@ -1,0 +1,27 @@
+body {
+    color: white;
+    background-color: black;
+}
+#Main{
+    text-align: center;
+}
+input{
+    border:none;
+    width: 400px;
+    height: 25px;
+    　　box-radius:25%;
+    　　outline:medium;
+    　　text-align:center;
+    background-color: white;
+    color: black;
+}
+form{
+    text-align: center;
+}
+#host{
+    text-align: center;
+}
+span{
+    font-family: 微软雅黑;
+    font-size: large;
+}
