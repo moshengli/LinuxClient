@@ -11,6 +11,9 @@ B/S架构，使用了springboot+thymeleaf进行开发，主要利用了ganymed-s
 
 1.  直接克隆到本地运行即可
 
+#### 项目地址
+- mosheng.fun:8989
+
 #### 使用说明
 
 1. 软件只能且默认通过ssh连接
